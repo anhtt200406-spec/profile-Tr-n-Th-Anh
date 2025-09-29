@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hồ sơ cá nhân — Trần Thế Anh </title>
+  <meta name="description" content="Hồ sơ cá nhân hiện đại: kỹ năng, dự án, kinh nghiệm, học vấn & liên hệ." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-6O5b0o0..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Loading Spinner -->
+  <div id="loader" aria-hidden="true">
+    <div class="spinner" role="status" aria-label="Đang tải..."></div>
+  </div>
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Bỏ qua nội dung</a>
+
+  <!-- Header / Hero -->
+  <header class="hero" id="home">
+    <nav class="nav container">
+      <a href="#home" class="logo" aria-label="Trang chủ">TT<span>A.</span></a>
+      <button class="nav__toggle" aria-label="Mở menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav__menu">
+        <li><a href="#about">Về tôi</a></li>
+        <li><a href="#skills">Kỹ năng</a></li>
+        <li><a href="#projects">Dự án</a></li>
+        <li><a href="#education">Học vấn</a></li>
+        <li><a href="#qualities">Phẩm chất</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero__content container reveal">
+      <div class="hero__text">
+        <h1>Trần Thế Anh</h1>
+        <p class="tagline">Business Analyst • Business/Finance Enthusiast • Web Learner</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact"><i class="fa-regular fa-paper-plane"></i> Liên hệ</a>
+          <a class="btn btn--ghost" href="#" aria-label="Xem CV (placeholder)">Xem CV</a>
+        </div>
+      </div>
+      <div class="hero__avatar">
+        <img src="./asset/ảnh đại diện.webp" alt="Ảnh đại diện Trần Thế Anh" />
+      </div>
+    </section>
+
+    <div class="hero__wave" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <!-- About -->
+    <section id="about" class="section container reveal">
+      <div class="section__head">
+        <h2>Về tôi</h2>
+        <p class="section__subtitle">Giới thiệu ngắn gọn</p>
+      </div>
+      <div class="about__grid">
+        <p>
+          Tôi là một <strong>Business Analyst</strong> định hướng sản phẩm, yêu thích biến dữ liệu
+          thành insight có thể hành động trong kinh doanh. Mục tiêu của tôi là ứng dụng <em>Python/SQL/BI</em> để tối ưu
+          vận hành và hỗ trợ ra quyết định trong kinh doanh. Bên cạnh đó, tôi quan tâm đến
+          <strong>thị trường tài chính</strong> và luôn duy trì thói quen học hỏi công nghệ web cơ bản.
+        </p>
+        <ul class="about__bullets">
+          <li><i class="fa-solid fa-bolt"></i> Tư duy định lượng, trực quan hóa rõ ràng</li>
+          <li><i class="fa-solid fa-diagram-project"></i> Quy trình phân tích end-to-end</li>
+          <li><i class="fa-solid fa-hands-holding"></i> Hợp tác tốt, giao tiếp mạch lạc</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section--alt reveal">
+      <div class="container">
+        <div class="section__head">
+          <h2>Kỹ năng</h2>
+          <p class="section__subtitle">Mức độ thành thạo (minh hoạ)</p>
+        </div>
+
+        <div class="skills__wrap">
+          <!-- Group: Data Analysis -->
+          <div class="skill__group card">
+            <h3><i class="fa-solid fa-chart-line"></i> Phân tích dữ liệu</h3>
+            <div class="circles">
+              <div class="circle" data-percent="85">
+                <span>Python</span>
+                <small>Pandas/NumPy</small>
+              </div>
+              <div class="circle" data-percent="80">
+                <span>SQL</span>
+                <small>Queries/ETL</small>
+              </div>
+              <div class="circle" data-percent="75">
+                <span>BI</span>
+                <small>Tableau/Power BI</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group: Programming -->
+          <div class="skill__group card">
+            <h3><i class="fa-solid fa-code"></i> Lập trình</h3>
+            <div class="bars">
+              <div class="bar">
+                <span>HTML</span>
+                <div class="bar__track"><div class="bar__fill" style="--val:85%"></div></div>
+              </div>
+              <div class="bar">
+                <span>CSS</span>
+                <div class="bar__track"><div class="bar__fill" style="--val:80%"></div></div>
+              </div>
+              <div class="bar">
+                <span>JavaScript</span>
+                <div class="bar__track"><div class="bar__fill" style="--val:70%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group: Business & Finance -->
+          <div class="skill__group card">
+            <h3><i class="fa-solid fa-coins"></i> Kinh doanh &amp; Tài chính</h3>
+            <ul class="chips">
+              <li class="chip">Phân tích thị trường</li>
+              <li class="chip">Trading mô phỏng</li>
+              <li class="chip">Quản trị rủi ro</li>
+            </ul>
+            <div class="bars">
+              <div class="bar">
+                <span>Trade chứng khoán</span>
+                <div class="bar__track"><div class="bar__fill" style="--val:65%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group: Office -->
+          <div class="skill__group card">
+            <h3><i class="fa-solid fa-table"></i> Tin học văn phòng</h3>
+            <div class="bars">
+              <div class="bar">
+                <span>Excel</span>
+                <div class="bar__track"><div class="bar__fill" style="--val:90%"></div></div>
+              </div>
+              <div class="bar">
+                <span>PowerPoint</span>
+                <div class="bar__track"><div class="bar__fill" style="--val:85%"></div></div>
+              </div>
+              <div class="bar">
+                <span>Word</span>
+                <div class="bar__track"><div class="bar__fill" style="--val:85%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group: Languages -->
+          <div class="skill__group card">
+            <h3><i class="fa-solid fa-language"></i> Ngoại ngữ</h3>
+            <ul class="chips">
+              <li class="chip">Tiếng Anh — B2 (IELTS 6.5)</li>
+            </ul>
+            <div class="bars">
+              <div class="bar">
+                <span>Reading/Listening</span>
+                <div class="bar__track"><div class="bar__fill" style="--val:80%"></div></div>
+              </div>
+              <div class="bar">
+                <span>Speaking/Writing</span>
+                <div class="bar__track"><div class="bar__fill" style="--val:70%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects & Experience -->
+    <section id="projects" class="section container reveal">
+      <div class="section__head">
+        <h2>Dự án &amp; Kinh nghiệm</h2>
+        <p class="section__subtitle">Một số dự án tiêu biểu</p>
+      </div>
+
+      <div class="projects__grid">
+        <!-- Project 1 -->
+        <article class="project card">
+          <div class="project__thumb">
+            <img src="./asset/good-and-bad-data-visualization-examples.webp" alt="Minh họa dashboard" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <h3>Dashboard phân tích bán hàng</h3>
+            <p>Xây dựng pipeline xử lý dữ liệu và dashboard theo dõi KPI (doanh thu, biên lợi nhuận, tồn kho) theo thời gian thực.</p>
+            <ul class="tech">
+              <li>Python</li><li>SQL</li><li>Power BI</li>
+            </ul>
+            <div class="links">
+              <a class="icon-btn" href="#" aria-label="Xem repo Github"><i class="fa-brands fa-github"></i></a>
+              <a class="icon-btn" href="#" aria-label="Xem demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project card">
+          <div class="project__thumb">
+            <img src="./asset/lap-trinh-3.webp" alt="Minh họa website cá nhân" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <h3>Website cá nhân tĩnh</h3>
+            <p>Thiết kế và triển khai trang profile cá nhân responsive, tối ưu Lighthouse, hiệu ứng cuộn mượt.</p>
+            <ul class="tech">
+              <li>HTML</li><li>CSS</li><li>JS</li>
+            </ul>
+            <div class="links">
+              <a class="icon-btn" href="#" aria-label="Xem repo Github"><i class="fa-brands fa-github"></i></a>
+              <a class="icon-btn" href="#" aria-label="Xem demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project card">
+          <div class="project__thumb">
+            <img src="./asset/SSI-iBoard-1.webp" alt="Minh họa trading mô phỏng" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <h3>Trading mô phỏng</h3>
+            <p>Mô phỏng chiến lược giao dịch cơ bản, backtest dữ liệu lịch sử và trực quan hóa hiệu suất.</p>
+            <ul class="tech">
+              <li>Python</li><li>Pandas</li><li>Matplotlib</li>
+            </ul>
+            <div class="links">
+              <a class="icon-btn" href="#" aria-label="Xem repo Github"><i class="fa-brands fa-github"></i></a>
+              <a class="icon-btn" href="#" aria-label="Xem demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education & Certificates -->
+    <section id="education" class="section section--alt reveal">
+      <div class="container">
+        <div class="section__head">
+          <h2>Bằng cấp &amp; Chứng chỉ</h2>
+          <p class="section__subtitle">Học vấn & chứng nhận liên quan</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content card">
+              <h3>Cử nhân Kinh tế — <span>NEU</span></h3>
+              <p>Chuyên ngành: Quản trị kinh doanh. Tập trung vào chất lượng và đổi mới sản phẩm</p>
+              <span class="time">2024 — 2028</span>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content card">
+              <h3>Chứng chỉ Data Analyst</h3>
+              <p>Chương trình nền tảng về Python, SQL, trực quan hóa & storytelling với dữ liệu.</p>
+              <span class="time">2024</span>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content card">
+              <h3>IELTS 6.5 (B2)</h3>
+              <p>Giao tiếp và viết học thuật, kỹ năng đọc hiểu tài liệu chuyên ngành.</p>
+              <span class="time">2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Qualities -->
+    <section id="qualities" class="section container reveal">
+      <div class="section__head">
+        <h2>Phẩm chất cá nhân</h2>
+        <p class="section__subtitle">Những điểm mạnh cốt lõi</p>
+      </div>
+
+      <ul class="qualities">
+        <li class="quality card"><i class="fa-solid fa-graduation-cap"></i><span>Tinh thần học hỏi</span></li>
+        <li class="quality card"><i class="fa-solid fa-puzzle-piece"></i><span>Giải quyết vấn đề</span></li>
+        <li class="quality card"><i class="fa-solid fa-users"></i><span>Làm việc nhóm</span></li>
+        <li class="quality card"><i class="fa-solid fa-person-running"></i><span>Chủ động</span></li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--alt reveal">
+      <div class="container">
+        <div class="section__head">
+          <h2>Liên hệ</h2>
+          <p class="section__subtitle">Kết nối cùng tôi</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info card">
+            <h3><i class="fa-regular fa-envelope"></i> Email</h3>
+            <a href="mailto:nguyenvana@gmail.com">anhtt200406@gmail.com</a>
+
+            <h3 class="mt"><i class="fa-solid fa-share-nodes"></i> Mạng xã hội</h3>
+            <div class="socials">
+              <a class="icon-btn" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a class="icon-btn" href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Optional simple form (no backend) -->
+          <form class="contact__form card" action="#" method="post" aria-label="Form liên hệ (demo)">
+            <div class="field">
+              <label for="name">Họ và tên</label>
+              <input id="name" name="name" type="text" placeholder="Tên của bạn" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="email@domain.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Lời nhắn</label>
+              <textarea id="message" name="message" rows="4" placeholder="Nội dung bạn muốn trao đổi..." required></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">
+              <i class="fa-regular fa-paper-plane"></i> Gửi
+            </button>
+            <p class="form__note" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Trần Thế Anh — Nỗ lực hơn ngày hôm qua.</p>
+      <a href="#home" class="back-to-top" aria-label="Lên đầu trang"><i class="fa-solid fa-arrow-up"></i></a>
+      <link rel="stylesheet" href="profile thế anh.css" />
+<script defer src="profile thế anh.js"></script>
+    </div>
+  </footer>
+</body>
+</html>
